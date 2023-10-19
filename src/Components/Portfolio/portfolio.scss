@@ -1,0 +1,134 @@
+.portfolio{
+    background: linear-gradient(180deg, #5c9c09, #7ad3a6 10%);
+    position: relative;
+
+    scroll-snap-type: mandatory;
+    scroll-behavior: smooth;
+    
+    .progress{
+        position: sticky;
+        top: 0;
+        left: 0;
+        // padding-top: 10rem ;
+        padding-bottom: 2rem;
+        text-align: center;
+        color: white;
+
+        span{
+            font-size: 4rem;
+        }
+
+        .progressBar{
+            height: 1rem;
+            border-radius: 5rem;
+            background-color: white;
+            z-index: -100;
+        }
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+
+        .wrapper{
+            display: flex;
+            gap: 50px;
+            max-width: 1440px;
+            height: 100%;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            
+            .imageContainer{
+                flex: 1;
+                padding: 1rem;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                height: 54%;
+                border-top-right-radius: 3rem;
+                border-bottom-left-radius: 3rem;
+                background-color: #fff;
+                animation: float 5s ease-in-out infinite;
+                @keyframes float {
+                    0% {
+                        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+                        transform: translatey(30px);
+                    }
+                    50% {
+                        box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+                        transform: translatey(-30px);
+                    }
+                    100% {
+                        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+                        transform: translatey(30px);
+                    }
+                }
+                img{
+                    border-top-right-radius: 2rem;
+                    border-bottom-left-radius: 2rem;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+
+                }
+            }
+            .textContainer{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                span{
+                    font-size: 5rem;
+                    font-family: var(--font-round);
+                    font-weight: 900;
+                    color: white;
+                    text-shadow: 0px 10px 20px #00000060;
+                    text-decoration: overline ;
+                    
+                    
+                }
+                .subtitle{
+                    color: #034159;
+                    text-shadow: 0px 2px 3px #ffffff99;
+                    padding: 5px;
+                    font-size: 36px;
+                    font-weight: 900;
+                    font-family: var(--font-round);
+                }
+                .description{
+                    text-shadow: 1px 1px 2px #00000040;
+                    padding: 5px;
+                    color: #02735e;
+                    font-size: 24px;
+                    font-family: var(--font-round);
+                    
+                }
+                
+                button{
+                    background-color: cyan;
+                    border: none; 
+                    border-radius: 2rem;
+                    padding: 1rem;
+                    font-size: 1.2rem;
+                    width: 300px;
+                    color: white;
+                    font-family: var(--font-round);
+                    cursor: pointer;
+                    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+                    transition: 0.5s;
+                }
+                button:hover{
+                    letter-spacing: 2px;
+                    font-weight: 800;
+                    background-color: rgb(183, 255, 255);
+                    color: black;
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+                }
+            }
+        }
+    }
+
+}

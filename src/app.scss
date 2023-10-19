@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap'); // abril fatface
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap'); // varela round
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap'); // poiret one
+
+:root{
+    --font-nice: 'Abril Fatface', cursive;
+    --font-poiret: 'Poiret One', cursive;
+    --font-round: 'Varela Round', sans-serif;
+}
+// Hide the scroll bar
+body::-webkit-scrollbar {
+    display: none;
+}
+// Just initialization of all components
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-nice);
+}
+html{
+    // scroll-snap-type:y mandatory;
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior:smooth;
+}
+
+// Color theme
+// @mixin clr-scheme($head, $head2, $font, $bg){
+//     h1{
+//         color: $head;
+//     }
+//     h2{
+//         color: $head2;
+//     }
+//     color: $font;
+//     // color: #fff;
+//     background-color: $bg;
+//     // background-color: #0c0c1d;
+// }
+// body{
+//     @include clr-scheme(#fff0a5, #ffb03b, #fff0a5,  #8e2800);
+// }
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+section{
+    height: 100vh;
+    // scroll-snap-align: center;
+}
+
+.bg-purple{
+    background-color: #9366ff;
+}
+.bg-blue{
+    background-color: #02aec4;
+}
+.bg-pink{
+    background-color: #1e3989;
+}
+.bg-cream{
+    background-color: #ffc596;
+}
+.bg-yellow{
+    background-color: #098b9d;
+}
+.bg-washed{
+    background-color: #f2ffe3;
+}
+// This is for framer motion crach course

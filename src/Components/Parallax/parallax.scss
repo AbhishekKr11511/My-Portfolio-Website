@@ -1,0 +1,93 @@
+.parallax{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-image: url('../../Assets/1-sky.png');
+    background-size: cover;
+
+    span{
+        font-size: 12rem;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        padding: 2vh;
+        font-family: var(--font-round);
+        color: white;
+        font-weight: 900;
+        text-shadow: 0px 10px 20px #00000060;
+    }
+
+    .stars{
+        background-image: url('../../Assets/2-stars.png');
+        background-size:contain;
+        // background-repeat: repeat-x;
+
+        height: 100%;
+        width: 200%;
+        position: absolute;
+        z-index: 5;
+    }
+    .mountains{
+        background-image: url('../../Assets/3-mountains.png');
+        background-size: cover;
+        z-index: 10;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    .trees{
+        background-image: url('../../Assets/4-trees.png');
+        background-size:cover ;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 20;
+    }
+}
+//-------------------------------------------------------------------------------------
+.parallaxG{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-image: url('../../Assets/1-skyG.png');
+    background-size: cover;
+
+    span{
+        font-size: 12rem;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        padding: 2vh;
+        font-family: var(--font-round);
+        color: white;
+        font-weight: 900;
+        text-shadow: 0px 10px 20px #00000060;
+    }
+
+    .stars{
+        background-image: url('../../Assets/2-stars.png');
+        background-size:contain;
+        // background-repeat: repeat-x;
+
+        height: 100%;
+        width: 200%;
+        position: absolute;
+        z-index: 5;
+    }
+    .mountains{
+        background-image: url('../../Assets/3-mountainsG.png');
+        background-size: cover;
+        z-index: 10;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    .trees{
+        background-image: url('../../Assets/4-treesG.png');
+        background-size:cover ;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 20;
+    }
+}
