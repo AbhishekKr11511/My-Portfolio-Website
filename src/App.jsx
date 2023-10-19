@@ -7,6 +7,7 @@ import Resume from './Components/Resume/Resume'
 import Portfolio from './Components/Portfolio/Portfolio'
 import Contact from './Components/Contact/Contact'
 import Skills from './Components/Skills/Skills'
+import HireMe from './Components/HireMe/HireMe'
 
 function App() {
 
@@ -22,9 +23,10 @@ function App() {
         <section className='bg-blue'><Parallax/></section>
         <section className='bg-pink'><Resume/></section>
         <section><Skills/></section>
+        <section><HireMe/></section>
         <section className='bg-yellow'><Parallax type={'services'}/></section>
         <Portfolio/>
-        <section><Contact/></section>
+        <section className='bg-seagreen'><Contact/></section>
       </div>
     </>
   )

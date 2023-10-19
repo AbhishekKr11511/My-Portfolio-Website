@@ -16,7 +16,7 @@ body::-webkit-scrollbar {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--font-nice);
+    font-family: var(--font-round);
 }
 html{
     // scroll-snap-type:y mandatory;
@@ -66,7 +66,7 @@ section{
 .bg-yellow{
     background-color: #098b9d;
 }
-.bg-washed{
-    background-color: #f2ffe3;
+.bg-seagreen{
+    background-color: #7ad3a6;
 }
 // This is for framer motion crach course

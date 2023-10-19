@@ -17,7 +17,6 @@
               color: white;
               text-shadow: 0px 10px 20px #00000060;
               font-size: 4rem;
-              font-family: var(--font-round);
               font-weight: 900;
               padding-top: 2rem;
           }
@@ -53,6 +52,7 @@
     transform: rotate(45deg);
     color: #1b2b67;
     padding-bottom: 2rem;
+    font-family: var(--font-nice);
   }
 }
 

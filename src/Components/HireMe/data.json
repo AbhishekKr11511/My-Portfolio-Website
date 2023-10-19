@@ -1,0 +1,32 @@
+[
+    {
+      "SoftSkill": "Critical Thinking",
+      "Me": 92,
+      "Others": 61
+    },
+    {
+      "SoftSkill": "Unique Creativity",
+      "Me": 98,
+      "Others": 30
+    },
+    {
+      "SoftSkill": "Clear Communication",
+      "Me": 90,
+      "Others": 30
+    },
+    {
+      "SoftSkill": "Networking / Partnership",
+      "Me": 75,
+      "Others": 60
+    },
+    {
+      "SoftSkill": "Flexibility",
+      "Me": 89,
+      "Others": 61
+    },
+    {
+      "SoftSkill": "Learning Speed",
+      "Me": 93,
+      "Others": 61
+    }
+  ]

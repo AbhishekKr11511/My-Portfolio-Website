@@ -39,6 +39,7 @@
         // }
       }
       .each-icon, .each-link{
+        font-family: var(--font-nice);
         transition: 0.2s ease-in-out;
       }
       .link:hover{

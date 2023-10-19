@@ -21,12 +21,15 @@ const MyResponsiveBar = ({ data }) => (
           ''
       ]}
       indexBy="Subject"
-      margin={{ top: 50, right: 130, bottom: 50, left: 160 }}
+      margin={{ top: 50, right: 150, bottom: 50, left: 200 }}
       padding={0.1}
       borderRadius={15}
       minValue={0}
       maxValue={100}
-      // reverse={true}
+      theme={{
+        "fontFamily" : 'var(--font-round)',
+        "fontSize" : '1rem'
+    }}
       layout='horizontal'
       valueScale={{ type: 'linear' }}
       indexScale={{ type: 'band', round: true }}

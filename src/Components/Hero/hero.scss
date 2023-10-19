@@ -8,7 +8,7 @@
   padding-left: 250px;
   background: linear-gradient(
     180deg,
-    pink,
+    #16223b,
     #02aec4);
   position: relative;
   display: flex;
@@ -19,7 +19,7 @@
     .text-container {
       padding: 1rem 0;
       .header-title {
-        // font-family: var(--font-round);
+        font-family: var(--font-nice);
         font-size: 5rem;
         color: white;
         text-shadow: 0px 10px 20px #00000060;
@@ -27,22 +27,18 @@
       }
       .header-name {
         font-weight: 900;
-        color: #fff7c2;
-        font-family: var(--font-round);
+        color: #fff;
         padding: 2rem 5px;
         text-shadow: 0px 10px 20px #f5b403;
 
         font-size: 4rem;
     }
     .header-content{
-        font-family: var(--font-round);
         font-size: 1.4rem;
         font-weight: bolder;
         color: #f5b403;
         .highlight{
-            
             color: #ffffff;
-            font-family: var(--font-round);
         }
       }
     }
@@ -56,10 +52,10 @@
     color: #ffffff20;
     width: 50%;
     font-weight: bold;
-    font-family: var(--font-round);
   }
   .slidingTextContainer-1 {
     z-index: 1;
+    font-family: var(--font-nice);
     position: absolute;
     font-size: 15vh;
     letter-spacing: 0.4rem;
@@ -101,7 +97,6 @@
         color: white;
         background-color: transparent;
         transition: 0.5s;
-        font-family: var(--font-round);
         font-weight: 700;
         font-size: 1.5rem;
 
