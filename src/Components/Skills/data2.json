@@ -1,0 +1,34 @@
+[
+    {
+        "Subject": "Adobe Creative Suite",
+        "Adobe Creative Suite": 80
+    },
+    {
+        "Subject": "CSS",
+        "CSS": 80
+    },
+    {
+        "Subject": "Tailwind",
+        "Tailwind": 60
+    },
+    {
+        "Subject": "Bootstrap",
+        "Bootstrap": 70
+    },
+    {
+        "Subject": "Ant Design",
+        "Ant Design": 70
+    },
+    {
+        "Subject": "Figma",
+        "Figma": 80
+    },
+    {
+        "Subject": "Sass",
+        "Sass": 80
+    },
+    {
+        "Subject": "Material UI",
+        "Material UI": 80
+    }
+]

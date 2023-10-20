@@ -4,10 +4,6 @@
       "HTML": 80
     },
     {
-      "Subject": "CSS",
-      "CSS": 85
-    },
-    {
       "Subject": "Javascript",
       "JavaScript": 90
     },
@@ -34,13 +30,5 @@
     {
       "Subject": "MongoDB",
       "MongoDB": 75
-    },
-    {
-      "Subject": "Tailwind",
-      "Tailwind": 60
-    },
-    {
-      "Subject": "Figma",
-      "Figma": 80
     }
   ]
