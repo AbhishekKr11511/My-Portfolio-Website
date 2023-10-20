@@ -9,10 +9,12 @@ const HireMe = () => {
       <motion.span className="hire-title"
       initial={{x: -100}}
       whileInView={{x: 0, transition:{type: 'spring', stiffness: 200}}}
+      viewport={{once: true}}
       >Why hire me?</motion.span>
       <motion.div className="hire-radar"
       initial={{scale : 0}}
-      whileInView={{scale: 1, transition: {type: 'spring', stiffness: 200}}}
+      whileInView={{scale: 1, transition: {type: 'spring', stiffness: 200, delay: 0.5}}}
+      viewport={{once: true}}
       >
         <MyResponsiveRadar data={data} />
       </motion.div>
