@@ -2,6 +2,8 @@ import { useRef, useState } from "react";
 import "./contact.scss";
 import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import {FaLocationDot, FaPhone, FaEnvelope} from 'react-icons/fa6'
+
 
 const variants = {
   initial: {
@@ -59,15 +61,15 @@ const Contact = () => {
         <motion.h1 variants={variants}>Lets work</motion.h1>
         <motion.h1 variants={variants}>Together..</motion.h1>
         <motion.div className="item" variants={variants}>
-          <h2>Mail</h2>
+          <h2><FaEnvelope/> E-Mail</h2>
           <span>abhishek.kr.11511@gmail.com</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Address</h2>
+          <h2><FaLocationDot/> Location</h2>
           <span>Jamshedpur, Jharkhand, India</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Phone</h2>
+          <h2> <FaPhone/> Phone</h2>
           <span>+91-9931469541</span>
         </motion.div>
       </motion.div>
