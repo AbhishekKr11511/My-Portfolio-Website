@@ -16,6 +16,7 @@
     "@nivo/radar": "^0.83.0",
     "framer-motion": "^10.16.4",
     "react": "^18.2.0",
+    "react-animated-cursor": "^2.11.2",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
     "react-router": "^6.16.0",

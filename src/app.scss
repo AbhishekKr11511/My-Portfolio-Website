@@ -70,3 +70,22 @@ section{
     background-color: #7ad3a6;
 }
 // This is for framer motion crach course
+
+
+// For Mobile devices
+
+@mixin mobile {
+    @media (max-width: 800px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (max-width: 1400px) {
+        @content;
+    }
+}
+@mixin laptop {
+    @media (max-width: 800px) {
+        @content;
+    }
+}

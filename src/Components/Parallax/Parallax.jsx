@@ -16,31 +16,16 @@ const Parallax = ({type}) => {
 
   const yBg = useTransform(scrollYProgress, [0,1], ['-15%', '0%'])
   const yText = useTransform(scrollYProgress, [0,1], ['-10%', '150%'])
-
-  const sceneVariants = {
-    initial: {
-        y : 200,
-        opacity:0
-    },
-    animate:{
-        y: 0,
-        opacity: 1,
-        transition : {
-            duration : 0.75,
-            staggerChildren : 0.1,
-        }
-    },
-}
   
   
   return (
     <>
-        <motion.div variants={sceneVariants} initial='initial' whileInView='animate' ref={ref} viewport={{once: true}} 
+        <motion.div ref={ref} viewport={{once: true}} 
         className={type==='services'? "parallaxG" :"parallax"} > 
-          <motion.span variants={sceneVariants} style={{y: yText}}>{type==='services'? "My Work ?" : "Know More ?"}</motion.span>
-          <motion.div variants={sceneVariants} style={{x: yBg}} className="stars"></motion.div>
-          <motion.div variants={sceneVariants} className="mountains"></motion.div>
-          <motion.div variants={sceneVariants} className="trees"></motion.div>
+          <motion.span style={{y: yText}}>{type==='services'? "My Work ?" : "Know More ?"}</motion.span>
+          <motion.div style={{x: yBg}} className="stars"></motion.div>
+          <div className="mountains"></div>
+          <div className="trees"></div>
         </motion.div>
     </>
   )
