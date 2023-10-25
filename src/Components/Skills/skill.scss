@@ -1,14 +1,23 @@
+@import "../../app.scss";
+
 .skills {
   width: 100%;
   height: 100%;
   display: flex;
-  // align-items: center;
-  // justify-content: center;
   background: linear-gradient(
     0deg,
     rgba(255, 255, 255, 1) 0%,
     rgba(205, 157, 255, 1)
   );
+
+  @include laptop{
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+  }
 
   .skills-title {
     display: flex;
@@ -18,6 +27,12 @@
     color: #fff;
     font-size: 4rem;
     text-shadow: 0px 10px 20px #00000060;
+    @include laptop {
+      font-size: 4rem;
+    }
+    @include tablet {
+      font-size: 3rem;
+    }
   }
   .skills-chart {
     height: 100%;
@@ -25,9 +40,25 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    .skill-bars{
+    @include laptop {
       height: 50%;
       width: 100%;
+      justify-content: center;
+    }
+    @include tablet {
+      height: 50%;
+      width: 100%;
+      justify-content: center;
+    }
+    .skill-bars {
+      height: 50%;
+      width: 100%;
+      @include laptop{
+        height: 50%;
+      }
+      @include tablet{
+        height: 50%;
+      }
     }
   }
 }
@@ -40,6 +71,12 @@
     rgba(255, 255, 255, 1) 0%,
     rgba(205, 157, 255, 1)
   );
+  @include laptop {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
 }
 .design-skills,
 .coding-skills {
@@ -47,8 +84,15 @@
   gap: 2rem;
   padding: 2rem;
   justify-content: center;
-//   grid-template-rows: repeat(auto-fill, 100px);
   grid-template-columns: repeat(4, 1fr);
+  @include laptop{
+    gap: 1rem;
+    padding: 0;
+  }
+  @include tablet{
+    gap: 1rem;
+    padding: 0;
+  }
 }
 
 .logo-container {
@@ -56,8 +100,8 @@
   height: 6rem;
   border-radius: 1rem;
   background: white;
-//   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -5px 2px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -5px 2px inset;
   display: flex;
   align-items: center;
   justify-self: center;
@@ -67,8 +111,17 @@ box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px
     padding: 0.5rem;
     border-radius: 1.5rem;
   }
+
+  @include laptop{
+    width: 4.5rem;
+    height: 3.5rem;
+  }
+  @include tablet{
+    width: 4rem;
+    height: 3rem;
+  }
 }
-.logo-container:hover{
-    scale: 1.4;
-    background: darkgray;
+.logo-container:hover {
+  scale: 1.4;
+  background: darkgray;
 }

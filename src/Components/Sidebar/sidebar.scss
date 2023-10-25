@@ -1,4 +1,6 @@
-// @import "../../app.scss";
+@import "../../app.scss";
+
+
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -8,6 +10,7 @@
   color: black;
   z-index: 100;
 
+
   .bg {
     z-index: 100;
     position: fixed;
@@ -16,10 +19,12 @@
     bottom: 0;
     width: 300px;
     background: white;
-
-    // @include mobile {
-    //   width: 200px;
-    // }
+    @include tablet{
+      width: 100%;
+    }
+    @include mobile{
+      width: 100%;
+    }
 
     .links {
       position: absolute;
@@ -34,9 +39,9 @@
       a {
         font-size: 40px;
 
-        // @include mobile {
-        //   font-size: 20px;
-        // }
+        @include mobile {
+          font-size: 30px;
+        }
       }
       .each-icon, .each-link{
         font-family: var(--font-nice);
@@ -52,7 +57,7 @@
   }
 
   button {
-    z-index: 999;
+    z-index: 900;
     position: fixed;
     width: 50px;
     height: 50px;

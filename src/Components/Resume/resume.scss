@@ -1,8 +1,12 @@
+@import '../../app.scss';
+
 .resume{
     background: linear-gradient(180deg, #1e3989, #cd9dff);
     width: 100%;
     height: 100%;
-    // margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     .resume-message{
         display: flex;
         align-items: center;
@@ -11,7 +15,13 @@
         margin-top: 2rem;
         // gap: 5rem;
         img{
-            width: 10vw;
+            width: 15vw;
+            @include laptop{
+              width: 20vw;
+            }
+            @include tablet{
+              width: 25vw;
+            }
         }
           .message{
               color: white;
@@ -19,6 +29,12 @@
               font-size: 4rem;
               font-weight: 900;
               padding-top: 2rem;
+              @include laptop{
+                font-size: 3rem;
+              }
+              @include tablet{
+                font-size: 2.5rem;
+              }
           }
     }
 }
@@ -34,7 +50,7 @@
 }
 
 .card {
-  font-size: 84px;
+  font-size: 5rem;
   width: 300px;
   height: 430px;
   display: flex;
@@ -47,12 +63,18 @@
     0 0 4px hsl(0deg 0% 0% / 0.075), 0 0 8px hsl(0deg 0% 0% / 0.075),
     0 0 16px hsl(0deg 0% 0% / 0.075);
   transform-origin: 10% 60%;
-
+  @include tablet{
+    width: 250px;
+    height: 350px;
+  }
   .resume-text{
     transform: rotate(45deg);
     color: #1b2b67;
     padding-bottom: 2rem;
     font-family: var(--font-nice);
+    @include tablet{
+      font-size: 4rem;
+    }
   }
 }
 
@@ -62,10 +84,19 @@
   left: 0;
   right: 0;
   top: 0;
-  margin: 22rem 50rem 0 50rem;
+  margin: 30vh 35vw 0 35vw;
   border-radius: 4rem;
   border: outset white 10px;
   box-shadow: 12px 20px 40px rgba(15, 15, 15, 0.9);
+  @include desktop{
+    margin: 30vh 25vw 0 25vw;
+  }
+  @include laptop{
+    margin: 30vh 22vw 0 22vw;
+  }
+  @include tablet{
+    margin: 23vh 20vw 0 20vw;
+  }
 
 }
 

@@ -1,12 +1,5 @@
 import './navbar.scss'
 import {motion} from 'framer-motion';
-// import facebook from '../../Assets/facebook.svg';
-// import discord from '../../Assets/discord.svg';
-// import instagram from '../../Assets/instagram.svg';
-// import linkedin from '../../Assets/linkedin.svg';
-// import twitter from '../../Assets/twitter.svg';
-// import github from '../../Assets/github.svg';
-
 const Navbar = () => {
   return (
     <motion.div className='nav-container'
