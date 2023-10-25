@@ -63,7 +63,7 @@ const Single = ({project}) => {
     offset: ["start end", "end center"]
   })
 
-  const yText = useTransform(scrollYProgress, [0,1], [350, -150])
+  const yText = useTransform(scrollYProgress, [0,1], [300, -100])
 
   
   return <section ref={singleRef}>
