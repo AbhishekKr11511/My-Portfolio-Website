@@ -87,7 +87,7 @@ const Single = ({project}) => {
           <span>{project.title}</span>
           <p className='subtitle'>{project.subtitle}</p>
           <p className='description'>{project.description}</p>
-          <button onClick={()=>window.location.href = project.link}> GitHub &lt;/&gt;</button>
+          <button onClick={()=>window.open(project.link, '_blank')}> GitHub &lt;/&gt;</button>
         </motion.div>
         
       </div>
