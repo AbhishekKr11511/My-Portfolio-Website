@@ -9,10 +9,10 @@ export const MyResponsiveRadar = ({ data }) => (
     margin={{ top: 70, right: 40, bottom: 50, left: 80 }}
     borderColor={{ from: "color" }}
     borderWidth={2}
-    gridLabelOffset={26}
+    gridLabelOffset={10}
     theme={{
         "fontFamily" : 'var(--font-round)',
-        "fontSize" : '1.2rem',
+        "fontSize" : '1rem',
     }}
     gridLevels={10}
     maxValue={100}

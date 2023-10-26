@@ -33,10 +33,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_94y20xo",
-        "template_v10u2oh",
+        "service_izfbq4l",
+        "template_4e89kis",
         formRef.current,
-        "pX_2hasGmGcuvjXIW"
+        "0yAQ45n1DHpMf1Js1"
       )
       .then(
         (result) => {
@@ -115,7 +115,7 @@ const Contact = () => {
           <textarea rows={8} placeholder="Message" name="message"/>
           <button>Submit</button>
           {error && "Error"}
-          {success && "Success"}
+          {success && "Email Sent to Abhishek 😀"}
         </motion.form>
       </div>
     </motion.div>

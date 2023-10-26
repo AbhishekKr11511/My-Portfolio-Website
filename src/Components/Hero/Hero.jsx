@@ -29,27 +29,27 @@ const textVariants = {
 }
 const sliderVariants1 = {
     initial: {
-      x: "-220%",
+      x: "-300%",
     },
     animate: {
-      x: 0,
+      x: '-20%',
       transition: {
         repeat: Infinity,
         repeatType:"mirror",
-        duration: 20,
+        duration: 10,
       },
     },
   };
 const sliderVariants2 = {
     initial: {
-      x: 0,
+      x: '-50%',
     },
     animate: {
-      x: "-220%",
+      x: "-800%",
       transition: {
         repeat: Infinity,
         repeatType:"mirror",
-        duration: 20,
+        duration: 60,
       },
     },
   };

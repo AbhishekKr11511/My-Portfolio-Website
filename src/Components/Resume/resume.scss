@@ -97,6 +97,9 @@
   @include tablet{
     margin: 23vh 20vw 0 20vw;
   }
+  @include mobile{
+    margin: 25vh 10vw 0 10vw;
+  }
 
 }
 

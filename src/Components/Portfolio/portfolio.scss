@@ -44,6 +44,9 @@
             @include laptop{
                 flex-direction: column;
             }
+            @include mobile{
+                gap: 0;
+            }
             
             .imageContainer{
                 padding: 1rem;
@@ -64,6 +67,10 @@
                 @include tablet{
                     height: 400px;
                     width: 500px;
+                }
+                @include mobile{
+                    height: 300px;
+                    width: 400px;
                 }
                 @keyframes float {
                     0% {
@@ -117,6 +124,10 @@
                     @include tablet{
                         font-size: 4rem;
                     }
+                    @include mobile{
+                        font-size: 3rem;
+                    }
+                    
                     
                 }
                 .subtitle{
@@ -135,6 +146,9 @@
                     @include tablet{
                         font-size: 30px;
                     }
+                    @include mobile{
+                        font-size: 24px;
+                    }
                 }
                 .description{
                     text-shadow: 1px 1px 2px #00000040;
@@ -150,6 +164,9 @@
                     }
                     @include tablet{
                         font-size: 20px;
+                    }
+                    @include mobile{
+                        font-size: 18px;
                     }
                     
                 }
