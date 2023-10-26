@@ -52,10 +52,15 @@ const sliderVariants2 = {
         duration: 60,
       },
     },
-  };
+};
+
+
+
 
 
 const Hero = () => {
+
+
   return (
     <div className="hero">
         <div className="hero-wrapper">
@@ -67,7 +72,7 @@ const Hero = () => {
                 <motion.span variants={textVariants} className='header-title'>Full Stack Developer</motion.span>
                 <motion.span variants={textVariants} className='header-title'>& UI/UX designer</motion.span>
                 <motion.div className="buttons">
-                    <button className='button'>Get In Touch . . .</button>
+                    <button className='button' onClick={location.href}>Get In Touch . . .</button>
                 </motion.div>
                 <motion.div className='mouse-icon' variants={textVariants} animate='scrollButton'>
                     <CgScrollV color='white' size={50}/>
