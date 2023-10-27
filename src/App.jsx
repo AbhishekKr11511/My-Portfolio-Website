@@ -9,6 +9,7 @@ import Contact from './Components/Contact/Contact'
 import Skills from './Components/Skills/Skills'
 import HireMe from './Components/HireMe/HireMe'
 import AnimatedCursor from "react-animated-cursor";
+import UpButton from './Components/UpButton/UpButton'
 
 function App() {
 
@@ -43,6 +44,7 @@ function App() {
       ]}
     />
         <section className='bg-purple'>
+          <UpButton/>
           <Sidebar/>
           <Navbar/>
           <Hero/>
