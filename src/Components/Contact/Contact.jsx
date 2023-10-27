@@ -52,6 +52,7 @@ const Contact = () => {
     <motion.div
       ref={ref}
       className="contact"
+      id="contact"
       variants={variants}
       initial="initial"
       whileInView="animate"

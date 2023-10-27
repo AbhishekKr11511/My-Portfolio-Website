@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import {FaHome, FaUserAlt, FaMailBulk, FaLaptopCode} from 'react-icons/fa'
+import {FaHome, FaUserAlt, FaMailBulk, FaLaptopCode, FaChartBar} from 'react-icons/fa'
 
 const variants = {
   open: {
@@ -30,19 +30,28 @@ const Links = () => {
   const items = [
     {
       name : 'Homepage',
-      icon : <FaHome/>
+      icon : <FaHome/>,
+      scroll: '#hero'
     },
     {
-      name : 'About',
-      icon : <FaUserAlt/>
+      name : 'Resume',
+      icon : <FaUserAlt/>,
+      scroll: '#resume'
+    },
+    {
+      name : 'Skills',
+      icon : <FaChartBar/>,
+      scroll: '#skills'
     },
     {
       name : 'Portfolio',
-      icon : <FaLaptopCode/>
+      icon : <FaLaptopCode/>,
+      scroll: '#portfolio'
     },
     {
       name : 'Contact',
-      icon : <FaMailBulk/>
+      icon : <FaMailBulk/>,
+      scroll: '#contact'
     }
   ]
 
@@ -57,8 +66,8 @@ const Links = () => {
           whileTap={{ scale: 0.95 }}
         >
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '1rem'}}>
-          <span className="each-icon">{item.icon}</span>
-          <span className="each-link">{item.name}</span>
+          <a className="each-icon" href={item.scroll}>{item.icon}</a>
+          <a className="each-link" href={item.scroll}>{item.name}</a>
           </div>
         </motion.a>
       ))}

@@ -46,7 +46,7 @@ const designArr = [css,sasss,taiwind,figma,ant,creative,bootstrap,material,vscod
 
 const Skills = () => {
   return (
-    <div className="skills">
+    <div className="skills" id="skills">
       <motion.div className="skills-chart"
       variants={skillVariants}
       initial="initial_left"

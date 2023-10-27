@@ -69,7 +69,7 @@ const food = ["Resume", 300, 200]
 const Resume = () => {
   return (
     <>
-      <div className="resume">
+      <div className="resume" id="resume"> 
           <Card text={food[0]}/>
 
 
