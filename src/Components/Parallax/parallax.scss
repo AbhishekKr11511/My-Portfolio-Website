@@ -78,6 +78,12 @@
         @include laptop{
             font-size: 7rem;
         }
+        @include tablet{
+            font-size: 5.5rem;
+        }
+        @include mobile{
+            font-size: 4rem;
+        }
     }
 
     .stars{
