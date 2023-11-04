@@ -34,7 +34,7 @@ export const MyResponsiveBarSkills = ({ data }) => (
         from: "color",
         modifiers: [["brighter", 1.6]],
       }}
-      // axisTop={null}
+      axisBottom={null}
       labelSkipWidth={30}
       labelSkipHeight={30}
       labelTextColor={{

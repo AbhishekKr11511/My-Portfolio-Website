@@ -72,7 +72,7 @@ const Hero = () => {
                 <motion.span variants={textVariants} className='header-title'>Full Stack Developer</motion.span>
                 <motion.span variants={textVariants} className='header-title'>& UI/UX designer</motion.span>
                 <motion.div className="buttons">
-                    <button className='button' onClick={location.href}>Get In Touch . . .</button>
+                    <button className='button' onClick={()=>location.href = '#resume'}>Curious About me ??</button>
                 </motion.div>
                 <motion.div className='mouse-icon' variants={textVariants} animate='scrollButton'>
                     <CgScrollV color='white' size={50}/>

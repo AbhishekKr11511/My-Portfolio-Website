@@ -34,6 +34,7 @@ export const MyResponsiveBarDesign = ({ data }) => (
         modifiers: [["brighter", 1.6]],
       }}
       axisLeft={null}
+      axisBottom={null}
       axisRight={{
         tickSize: 5,
         tickPadding: 5,

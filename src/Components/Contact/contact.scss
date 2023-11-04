@@ -30,6 +30,9 @@
         font-size: 70px;
       }
     }
+    @include tablet{
+      margin-bottom: 2rem;
+    }
 
     span {
       font-weight: 300;
