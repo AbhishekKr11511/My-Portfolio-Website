@@ -14,7 +14,7 @@ const projects = [
     subtitle : 'The fine dining exprience like never before',
     img: zaffran,
     description : "Indulge in a culinary voyage at our Indian-Persian fine dining establishment, where the rich, aromatic allure of saffron harmonizes with exquisite flavors for a truly enchanting gastronomic experience.",
-    link : 'https://github.com/AbhishekKr11511/Zaffran-website'
+    link : 'https://github.com/AbhishekKr11511/Project-Zaffran-Fine-Dining-Experience'
   },
   {
     title : "GPT-3",
