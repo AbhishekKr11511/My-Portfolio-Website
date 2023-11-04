@@ -3,7 +3,7 @@ import Arrow from '../../Assets/Arrow.png'
 import leftbrain from '../../Assets/left brain.png'
 import rightbrain from '../../Assets/right brain.png'
 import {motion} from "framer-motion";
-import resume from '../../Assets/Download/Abhishek Resume2.0.pdf'
+import resume from '../../Assets/Download/Abhisheks Resume.pdf'
 
 const cardVariants = {
   offscreen: {
