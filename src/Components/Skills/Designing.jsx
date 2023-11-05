@@ -15,7 +15,7 @@ export const MyResponsiveBarDesign = ({ data }) => (
         "Material UI",
       ]}
       indexBy="Subject"
-      margin={{ top: 50, right: 200, bottom: 50, left: 50 }}
+      margin={{ top: 50, right: 200, bottom: 20, left: 50 }}
       padding={0.1}
       borderRadius={15}
       minValue={0}

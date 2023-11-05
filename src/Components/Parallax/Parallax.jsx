@@ -14,7 +14,7 @@ const Parallax = ({type}) => {
     offset:["start end", "end start"]
   })
 
-  const yBg = useTransform(scrollYProgress, [0,1], ['-15%', '0%'])
+  const yBg = useTransform(scrollYProgress, [0,1], ['-20%', '0%'])
   const yText = useTransform(scrollYProgress, [0,1], ['-10%', '150%'])
   
   

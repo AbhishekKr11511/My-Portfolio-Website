@@ -9,44 +9,47 @@
     justify-content: center;
     .resume-message{
         display: flex;
+        flex: 1;
         align-items: center;
-        justify-content: center;
+        justify-content: baseline;
         flex-direction: column;
-        margin-top: 2rem;
-        // gap: 5rem;
+        margin-top: 1rem;
         img{
-            width: 15vw;
+            width: 10vh;
             @include laptop{
-              width: 20vw;
+              width: 15vh;
             }
             @include tablet{
-              width: 25vw;
+              width: 20vh;
             }
         }
           .message{
               color: white;
               text-shadow: 0px 10px 20px #00000060;
-              font-size: 4rem;
+              font-size: 3rem;
               font-weight: 900;
               padding-top: 2rem;
+              @include desktop{
+                padding-top: 0rem;
+              }
               @include laptop{
-                font-size: 3rem;
+                font-size: 2.25rem;
               }
               @include tablet{
-                font-size: 2.5rem;
+                font-size: 2rem;
               }
           }
     }
 }
 
 .card-container {
+  flex: 1;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   padding-top: 20px;
-
 }
 
 .card {
@@ -64,6 +67,10 @@
     0 0 4px hsl(0deg 0% 0% / 0.075), 0 0 8px hsl(0deg 0% 0% / 0.075),
     0 0 16px hsl(0deg 0% 0% / 0.075);
   transform-origin: 10% 60%;
+  @include desktop{
+    width: 200px;
+    height: 300px;
+  }
   @include tablet{
     width: 250px;
     height: 350px;
@@ -73,6 +80,9 @@
     color: #1b2b67;
     padding-bottom: 2rem;
     font-family: var(--font-nice);
+    @include desktop{
+      font-size: 3rem;
+    }
     @include tablet{
       font-size: 4rem;
     }
@@ -90,7 +100,7 @@
   border: outset white 10px;
   box-shadow: 12px 20px 40px rgba(15, 15, 15, 0.9);
   @include desktop{
-    margin: 30vh 25vw 0 25vw;
+    margin: 35vh 25vw 0 25vw;
   }
   @include laptop{
     margin: 30vh 22vw 0 22vw;
@@ -99,7 +109,7 @@
     margin: 23vh 20vw 0 20vw;
   }
   @include mobile{
-    margin: 25vh 10vw 0 10vw;
+    margin: 35vh 10vw 0 10vw;
   }
 
 }

@@ -16,7 +16,7 @@ export const MyResponsiveBarSkills = ({ data }) => (
       ]}
       reverse={true}
       indexBy="Subject"
-      margin={{ top: 50, right: 50, bottom: 50, left: 200 }}
+      margin={{ top: 50, right: 50, bottom: 20, left: 200 }}
       padding={0.1}
       borderRadius={15}
       minValue={0}

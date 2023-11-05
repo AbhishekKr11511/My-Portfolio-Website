@@ -54,7 +54,7 @@ function Card({text}) {
       whileInView="onscreen"
       viewport={{ amount: 0.8 }}
     >
-      <div className="splash" style={{background: 'linear-gradient(-2deg, #ababab 0%, #fff 75%)'}} />
+      {/* <div className="splash" style={{background: 'linear-gradient(-2deg, #ababab 0%, #fff 75%)'}} /> */}
       <motion.div className="card" variants={cardVariants}>
         <span className="resume-text">
             {text}
@@ -74,22 +74,11 @@ const Resume = () => {
 
 
         <motion.div className="resume-message" initial='initial' variants={textVariants} whileInView='animate' viewport={{once: true}}>
-          
-          {/* <div className="left">
-            <span className="text-skills">Programmer</span>
-            <img src={leftbrain} alt="" />
-          </div> */}
-          
-          {/* <div className="middle"> */}
+
             <motion.img variants={textVariants} src={Arrow} alt="Arrowpng"/>
             <motion.span variants={textVariants} className="message">Feel Free To Look</motion.span>
             <motion.span variants={textVariants} className="message">Through My Resume</motion.span>
-          {/* </div> */}
-          
-          {/* <div className="right">
-            <span className="text-skills">Designer</span>
-            <img src={rightbrain} alt="rightbrain" />
-          </div> */}
+
         </motion.div>
       </div>
     </>

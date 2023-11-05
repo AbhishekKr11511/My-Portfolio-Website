@@ -24,23 +24,10 @@ html{
     overflow-x: hidden;
     scroll-behavior:smooth;
 }
+.website-body{
+    width: 100vw;
+}
 
-// Color theme
-// @mixin clr-scheme($head, $head2, $font, $bg){
-//     h1{
-//         color: $head;
-//     }
-//     h2{
-//         color: $head2;
-//     }
-//     color: $font;
-//     // color: #fff;
-//     background-color: $bg;
-//     // background-color: #0c0c1d;
-// }
-// body{
-//     @include clr-scheme(#fff0a5, #ffb03b, #fff0a5,  #8e2800);
-// }
 a{
     text-decoration: none;
     color: inherit;

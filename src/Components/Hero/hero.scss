@@ -25,6 +25,10 @@
     flex-direction: column;
     padding: 200px 0 0 0;
   }
+  @include mobile{
+    flex-direction: column;
+    padding: 50px 0 0 0;
+  }
 
   
   .hero-wrapper {
@@ -44,6 +48,9 @@
         @include tablet{
           font-size: 3rem;
         }
+        @include mobile{
+          font-size: 2rem;
+        }
 
       }
       .header-name {
@@ -58,6 +65,9 @@
         @include tablet{
           font-size: 2rem;
         }
+        @include mobile{
+          font-size: 1.5rem;
+        }
     }
     .header-content{
         font-size: 1.4rem;
@@ -67,6 +77,9 @@
           font-size: 1.1rem;
         }
         @include tablet{
+          font-size: 0.9rem;
+        }
+        @include mobile{
           font-size: 0.9rem;
         }
         .highlight{

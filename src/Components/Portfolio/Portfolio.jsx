@@ -56,7 +56,7 @@ const Single = ({project}) => {
 
   const slideVariant = {
     initial : {
-      x : 300
+      x : -300
     },
     animate: {
       x : 0,
@@ -67,13 +67,6 @@ const Single = ({project}) => {
     }
   }
 
-  const {scrollYProgress} = useScroll({
-    target:singleRef,
-    offset: ["start end", "end center"]
-  })
-
-  const yText = useTransform(scrollYProgress, [0,1], [300, -100])
-
   
   return <section ref={singleRef}>
     <div className="container">
@@ -83,7 +76,7 @@ const Single = ({project}) => {
           <img src={project.img} alt="Insert Image here" />
         </div>
 
-        <motion.div variants={slideVariant} initial='initial' whileInView='animate' viewport={{once: true}} className="textContainer" style={{y: yText}}>
+        <motion.div variants={slideVariant} initial='initial' whileInView='animate' viewport={{once: true}} className="textContainer">
           <span>{project.title}</span>
           <p className='subtitle'>{project.subtitle}</p>
           <p className='description'>{project.description}</p>
