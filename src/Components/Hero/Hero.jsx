@@ -82,22 +82,22 @@ const Hero = () => {
         </div>
 
 
-        {/* <motion.div
+        <motion.div
         variants={sliderVariants1}
         initial="initial"
         animate='animate'
         className="slidingTextContainer-1"
         >
             Learning Everyday to be the Top 1% of Developers!!
-        </motion.div> */}
+        </motion.div>
 
-        {/* <motion.div
+        <motion.div
         variants={sliderVariants2}
         initial='initial'
         animate = 'animate'
         className="slidingTextContainer-2">
         Web Development, Designing, Programming!!
-        </motion.div> */}
+        </motion.div>
 
 
 
