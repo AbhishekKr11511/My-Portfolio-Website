@@ -103,6 +103,10 @@
     gap: 1rem;
     padding: 0;
   }
+  @include mobile{
+    gap: 0.5rem;
+    padding: 0;
+  }
 }
 
 .logo-container {
@@ -120,8 +124,11 @@
     width: 100%;
     padding: 0.5rem;
     border-radius: 1.5rem;
+    @include mobile{
+      padding: 0.1rem;
+    }
   }
-
+  
   @include laptop{
     width: 4.5rem;
     height: 3.5rem;
@@ -132,7 +139,7 @@
   }
   @include mobile{
     width: 2rem;
-    height: 1.3rem;
+    height: 2rem;
   }
 }
 .logo-container:hover {

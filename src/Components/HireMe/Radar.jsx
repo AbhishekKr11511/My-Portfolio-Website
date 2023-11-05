@@ -6,7 +6,7 @@ export const MyResponsiveRadar = ({ data }) => (
     keys={["Me", "Others"]}
     indexBy="SoftSkill"
     valueFormat=">-.2f"
-    margin={{ top: 70, right: 40, bottom: 50, left: 80 }}
+    margin={{ top: 70, right: 100, bottom: 50, left: 100 }}
     borderColor={{ from: "color" }}
     borderWidth={2}
     gridLabelOffset={10}
