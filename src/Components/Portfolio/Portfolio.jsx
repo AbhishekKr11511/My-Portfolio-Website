@@ -56,7 +56,7 @@ const Single = ({project}) => {
 
   const slideVariant = {
     initial : {
-      x : -300
+      x : -200
     },
     animate: {
       x : 0,
