@@ -68,7 +68,7 @@ const Skills = () => {
       </motion.div>
 
       {/* This is the mid divider which will dissappear in mobile version */}
-      <div className="divider"></div>
+{/*       <div className="divider"></div> */}
 
       <motion.div className="skills-chart"
       variants={skillVariants}
