@@ -54,9 +54,9 @@ const Skills = () => {
       whileInView="animate"
       >
         <span className="skills-title">Coding Skills</span>
-        <div className="skill-bars">
+{/*         <div className="skill-bars">
           <MyResponsiveBarSkills data={data1} />
-        </div>
+        </div> */}
 
 
         <div className="coding-skills" >
@@ -77,9 +77,9 @@ const Skills = () => {
       viewport={{once: true}}
       >
         <span className="skills-title">Design Skills</span>
-        <div className="skill-bars">
+{/*         <div className="skill-bars">
           <MyResponsiveBarDesign data={data2} />
-        </div>
+        </div> */}
 
         <div className="design-skills" >
           {designArr.map((item, index)=> {
