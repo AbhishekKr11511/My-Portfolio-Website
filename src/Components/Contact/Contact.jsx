@@ -73,7 +73,7 @@ const Contact = () => {
             <FaLocationDot />
             Location
           </p>
-          <span>Jamshedpur, Jharkhand, India</span>
+          <span>Earth 🌏</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <p>
