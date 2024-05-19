@@ -69,7 +69,7 @@ const Hero = () => {
                 <motion.span variants={textVariants} className='header-content'>My objective is to offer <span className='highlight'>Accurate Solutions</span> at <span className='highlight'>Breakneck Speeds !</span></motion.span>
                 <motion.span variants={textVariants} className='header-content'>I come prepared with <span className='highlight'>Outstanding Skills</span> & <span className='highlight'>Breathtaking Creativity !</span> </motion.span>
                 <motion.span variants={textVariants} className='header-content'>Together, Lets develop initiatives that will astound everyone.</motion.span>
-                <motion.span variants={textVariants} className='header-title'>Full Stack Developer</motion.span>
+                <motion.span variants={textVariants} className='header-title'>Front-End Developer</motion.span>
                 <motion.span variants={textVariants} className='header-title'>& UI/UX designer</motion.span>
                 <motion.div className="buttons">
                     <button className='button' onClick={()=>location.href = '#resume'}>Curious About me ??</button>
